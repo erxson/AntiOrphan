@@ -1,0 +1,13 @@
+name: AntiOrphan
+version: '${project.version}'
+main: su.dice.antiorphan.AntiOrphan
+api-version: '1.20'
+depend: [CoreProtect]
+authors: [erxson]
+
+commands:
+  debug:
+    description: 'Debug'
+    usage: '/antiorphan:debug'
+    aliases: [d]
+    permission: antiorphan.debug
