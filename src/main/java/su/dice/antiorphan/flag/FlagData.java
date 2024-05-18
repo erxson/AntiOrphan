@@ -20,4 +20,14 @@ public class FlagData extends ArrayList<Flag> {
 
         return w;
     }
+
+    public ArrayList<Flag> getFlagsByType(FlagType type) {
+        ArrayList<Flag> flags = new ArrayList<>();
+        for (Flag flag : this) {
+            if (flag.getType() == type) {
+                flags.add(flag);
+            }
+        }
+        return flags;
+    }
 }

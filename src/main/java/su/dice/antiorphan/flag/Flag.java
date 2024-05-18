@@ -2,7 +2,7 @@ package su.dice.antiorphan.flag;
 
 public class Flag {
     private final FlagType type;
-    private final long time = System.currentTimeMillis();
+    private final long timestamp = System.currentTimeMillis();
 
     public Flag(FlagType type) {
         this.type = type;
@@ -16,7 +16,7 @@ public class Flag {
         return this.type.weight();
     }
 
-    public long getTime() {
-        return this.time;
+    public long getTimestamp() {
+        return this.timestamp;
     }
 }

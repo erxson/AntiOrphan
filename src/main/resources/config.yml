@@ -1,0 +1,55 @@
+flags:
+
+  # How long flags will be kept
+  flag-retention: 5
+
+  # Kick player and broadcast message
+  # if flags overall weight is greater than N
+  weight-for-kick: 10
+
+  # Kick player if player played less than N hours
+  max-hours-for-kick: 24
+
+  # Send broadcast message on kick
+  broadcast-on-kick: true
+
+  # Available checks
+  checks:
+
+    # Triggers when player breaks chest/barrel
+    break-container:
+      enabled: true
+
+      # Flags only when x < 100 and z < 100
+      flag-only-on-spawn: true
+
+      # 1 flag equals N weight
+      weight: 2
+
+      # Cancel event for newbies on flag
+      newbies:
+
+        # Cancel if player played less than N hours
+        min-hours: 6
+
+        # Message sent to player
+        message: "<gray>Чувак, ты слишком маленький, чтобы это самово!</gray>"
+
+    # Triggers when player primes TNT
+    prime-tnt:
+      enabled: true
+
+      # Flags only when x < 100 and z < 100
+      flag-only-on-spawn: true
+
+      # 1 flag equals N weight
+      weight: 3
+
+      # Cancel event for newbies on flag
+      newbies:
+
+        # Cancel if player played less than N hours
+        min-hours: 6
+
+        # Message sent to player
+        message: "<gray>Чувак, ты слишком маленький, чтобы играть со спичками!</gray>"

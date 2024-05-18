@@ -6,8 +6,9 @@ depend: [CoreProtect]
 authors: [erxson]
 
 commands:
-  debug:
-    description: 'Debug'
-    usage: '/antiorphan:debug'
-    aliases: [d]
+  antiorphan-debug:
+    description: 'депук'
     permission: antiorphan.debug
+  antiorphan-reload:
+    description: 'фыв'
+    permission: antiorphan.reload

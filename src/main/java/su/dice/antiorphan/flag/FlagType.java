@@ -1,8 +1,10 @@
 package su.dice.antiorphan.flag;
 
+import su.dice.antiorphan.config.Config;
+
 public enum FlagType {
-    PRIMED_TNT(3),
-    BREAK_CONTAINER(2);
+    PRIMED_TNT(Config.PRIME_TNT_WEIGHT),
+    BREAK_CONTAINER(Config.BREAK_CONTAINER_WEIGHT);
 
     private final int weight;
 
